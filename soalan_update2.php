@@ -1,6 +1,5 @@
 <?php
 include('keselamatan.php');
-include('menu_guru.php');
 include('sambungan.php');
 ?>
 
@@ -11,23 +10,24 @@ include('sambungan.php');
 <form class='panjang' method='post' action='soalan_update2.php'>
 <table>
 <tr>
-<t>Soalan</td>
+<td>Soalan</td>
 <td>
 <select name="idsoalan">
 <?php
 $sql="SELECT * FROM soalan";
 $data = mysqli_query ($sambungan, $sql);
-while ($soalan = mysqli_fetch_ array($data)) {
-echo "<option value='$soalan[idsoalan]'>$soalan[namasoalan]</option>":
+while ($soalan = mysqli_fetch_array($data)) {
+echo "<option value='$soalan[idsoalan]'>$soalan[namasoalan]</option>";
+}
 ?>
 </select>
-</ta>
+</td>
 </tr>
 </table>
 <button class= cari" type="submit" >Cari</button>
 </form>
 <?php
-if (isset($ POST['idsoalan'])) {
+if (isset($_POST['idsoalan'])) {
 $idsoalan = $_POST['idsoalan'];
 $sql = "SELECT * FROM soalan WHERE idsoalan = 'sidsoalan' ";
 $result = mysqli_query($sambungan, $sql);
@@ -36,9 +36,9 @@ $idsoalan=$soalan["idsoalan"];
 $namasoalan=$soalan["namasoalan"];
 $pilihana = $soalan["pilihana"];
 $pilihanb = $soalan["pilihanb"];
-$jawapan = $soalan["jawapan"]:
+$jawapan = $soalan["jawapan"];
 $idguru = $soalan["idguru"];
-Sidtopik= $soalan["idtopik"];
+$idtopik= $soalan["idtopik"];
 }
 
 else {
@@ -52,7 +52,7 @@ $idtopik="";
 }
 ?>
 
-<h3 class='panjang'>Kemaskini</h3>
+<h3 class='panjang'>Kemaskini Soalan</h3>
 <form class='panjang' action='soalan_update.php' method='post'>
 <table>
 <tr>

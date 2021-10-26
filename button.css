@@ -1,0 +1,30 @@
+button{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: left;
+    color:rgb(209, 223, 19);
+
+    width: 90px;
+    padding: 7px 8px 7px 32px;
+    border: 1px solid rgb(50, 135, 141);
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: rgb(179, 170, 160);
+    background-repeat: no-repeat;
+}
+
+button.login{
+    background-image: url(gambar/next.png);
+    vertical-align: middle
+}
+
+button.signup{
+    background-image: url(gambar/action.png);
+    vertical-align: middle
+}
+
+button.simpan{
+    background-color: black;
+    cursor: pointer;
+}
