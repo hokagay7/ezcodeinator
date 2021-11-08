@@ -14,3 +14,4 @@ Current bug:
 3. shitty design
 4. dup file & line. Kena check satu2 :P
 5. unneccessary file/code
+6. file url kena ada port
