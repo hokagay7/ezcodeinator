@@ -1,3 +1,5 @@
+# 7/7/21 UPDATE: Maybe start update this coding on winter idk
+
 # Kena update website ni, malas...
 
 
